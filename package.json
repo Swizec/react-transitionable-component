@@ -1,7 +1,7 @@
 {
   "name": "react-transitionable-component",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "devDependencies": {
     "react-scripts": "0.2.1"
   },

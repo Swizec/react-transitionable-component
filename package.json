@@ -1,0 +1,23 @@
+{
+  "name": "react-transitionable-component",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "react-scripts": "0.2.1"
+  },
+  "dependencies": {
+    "d3": "^4.2.1",
+    "d3-selection": "^1.0.2",
+    "d3-transition": "^1.0.1",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/react-scripts/config/eslint.js"
+  }
+}

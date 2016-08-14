@@ -1,2 +1,3 @@
 
-export { TransitionableComponent } from './src/TransitionableComponent';
+
+export { default as TransitionableComponent } from './src/TransitionableComponent';

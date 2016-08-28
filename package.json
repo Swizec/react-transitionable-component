@@ -1,6 +1,6 @@
 {
   "name": "react-transitionable-component",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": false,
   "devDependencies": {
     "babel-cli": "^6.14.0",

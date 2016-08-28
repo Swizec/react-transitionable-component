@@ -1,2 +1,4 @@
 
-export { TransitionableComponent } from './TransitionableComponent';
+import TransitionableComponent from './TransitionableComponent';
+
+export default TransitionableComponent;

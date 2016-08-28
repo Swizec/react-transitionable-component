@@ -19,6 +19,9 @@ class TransitionableComponent extends Component {
 
     _defineEasing(easing) {
         if (!this.easing || easing !== this.state.easing) {
+            if (!easing) {
+                easing = 'linear';
+            }
             this.easing = d3[`ease${capitalizeFirstLetter(easing)}`];
         }
     }
@@ -43,11 +46,15 @@ class TransitionableComponent extends Component {
         }
 
         Object.keys(newProps)
-              .forEach((k) => {
-                  transition.attr(k, newProps[k]);
-              });
+                .forEach((k) => {
+                    if (typeof newProps[k] != 'object') {
+                        transition.attr(k, newProps[k]);
+                    }
+                });
 
-        transition.on('end', () => this.setState(newProps));
+        transition.on('end', () => {
+            this.setState(newProps);
+        });
     }
 }
 
